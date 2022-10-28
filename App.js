@@ -9,7 +9,7 @@ export default function App() {
         return (
             <Card
                 key={x.id}
-                item={x}
+                {...x}
             />
         )}
     )
