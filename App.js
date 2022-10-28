@@ -12,7 +12,7 @@ export default function App() {
                 img={x.coverImg}
                 rating={x.stats.rating}
                 reviewCount={x.stats.reviewCount}
-                country={x.location}
+                location={x.location}
                 title={x.title}
                 price={x.price}
                 openSpots={x.openSpots}
