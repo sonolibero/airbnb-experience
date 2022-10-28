@@ -5,19 +5,24 @@ import Card from "./components/Card"
 import data from "./data"
 
 export default function App() {
-    const Cards = data.map(x => <Card 
-        img={x.coverImg}
-        rating={x.stats.rating}
-        reviewCount={x.stats.reviewCount}
-        country={x.location}
-        title={x.title}
-        price={x.price}
-        />)
+    const cards = data.map(x => {
+        return (
+            <Card 
+                img={x.coverImg}
+                rating={x.stats.rating}
+                reviewCount={x.stats.reviewCount}
+                country={x.location}
+                title={x.title}
+                price={x.price}
+            />
+        )}
+    )
+
     return (
         <div>
             <Navbar />
             <Hero />
-            {Cards}
+            {cards}
         </div>
     )
 }
